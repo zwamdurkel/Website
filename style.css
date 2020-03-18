@@ -1,0 +1,27 @@
+/* Made by zwamdurkel */
+body, html {
+    min-width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: -2;
+}
+
+.container-cont {
+    min-height: calc(100vh - 2.5rem);
+  }
+
+/* Particles */
+canvas {
+    display:block;
+    vertical-align:bottom;
+}
+
+#particles-js{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #114e14;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}

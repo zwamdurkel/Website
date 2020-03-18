@@ -1,0 +1,7 @@
+$font-size-base: 1rem;
+$theme-colors: (
+  "primary": #2fac35,
+  "dark": #000
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
