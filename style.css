@@ -25,3 +25,10 @@ canvas {
     bottom: 0;
     z-index: -1;
 }
+
+/* Cookies */
+.cc-window {
+    z-index: 2000;
+}
+
+/* Scrollbar */

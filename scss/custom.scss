@@ -3,5 +3,7 @@ $theme-colors: (
   "primary": #2fac35,
   "dark": #000
 );
+$tooltip-color: #000;
+$tooltip-bg: #2fac35;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
