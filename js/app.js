@@ -83,14 +83,14 @@ particlesJS('particles-js',
     }
   },
   "interactivity": {
-    "detect_on": "canvas",
+    "detect_on": "body",
     "events": {
       "onhover": {
         "enable": true,
         "mode": "repulse"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true

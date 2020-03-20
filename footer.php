@@ -37,7 +37,7 @@
         var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
         navbar.style.opacity = 1;
-        navbar.style.transition = "opacity 1s";
+        navbar.style.transition = "opacity .25s";
         if (filename !== "/") {
             navbar.classList.add("shadow"); 
         }
@@ -45,7 +45,7 @@
         function myFunction() {
         if (window.pageYOffset >= 150 && window.pageYOffset < 400) {
             navbar.style.opacity = 0;
-            navbar.style.transition = "opacity 1s";
+            navbar.style.transition = "opacity .25s";
         } else if (window.pageYOffset >= 300) {
             navbar.classList.add("sticky-top");
             navbar.classList.add("shadow");
@@ -58,6 +58,18 @@
             navbar.style.opacity = 1;
             navbar.style.transition = "opacity 0s";
         }
+        }
+    </script>
+    <script>
+        function copyString(str) {
+            var el = document.createElement('textarea');
+            el.value = str;
+            el.setAttribute('readonly', '');
+            el.style = {position: 'absolute', left: '-9999px'};
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>

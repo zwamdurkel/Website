@@ -3,13 +3,13 @@
         <img src="images/banner.png" alt="Zwamdurkel's website" class="img-fluid w-100">
         <div class="mx-5">
             <h1>Zwamdurkel's Site</h1>
-            <hr>
+            <hr class="bg-primary">
         </div>
-        <div class="bg-white shadow-lg rounded p-3 mx-5 overlflow-auto">
+        <div class="bg-white shadow-lg rounded-lg p-3 mx-5 overlflow-auto">
             <?php
             if ( !$login ) {
                 echo"<h2>Wait, What?</h2>
-                <hr>
+                <hr class='bg-primary'>
                 <p>This is Zwamdurkel's personal website. <br>Why are you here? If your name isn't Zwamdurkel, you have no business here. :P</p>
                 <p>On this site you'll find many tools. That is, if your name is Zwamdurkel. Without logging in you will not be able to access many tools.</p>
                 <div class='d-flex justify-content-end'>
@@ -17,7 +17,7 @@
                 </div>";
             } else {
                 echo"<h2>Welcome Back!</h2>
-                <hr>
+                <hr class='bg-primary'>
                 <p>You seem to be Zwamdurkel.</p>";
             }
             ?>

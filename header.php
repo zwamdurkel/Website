@@ -12,6 +12,12 @@ if ( isset ($_SESSION['login'] ) ) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Zwamdurkel">
+    <meta name="theme-color" content="#2fac35">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="./images/favicon_64.png" type="image/png" sizes="64x64">
+    <link rel="icon" href="./images/favicon_32.png" type="image/png">
+    <link rel="icon" href="./images/favicon_16.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_180.png">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./fontawesome/css/pro.min.css">
@@ -35,11 +41,11 @@ if ( isset ($_SESSION['login'] ) ) {
                         <a class="nav-link text-primary" id="/" href="/">Home </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" id="/discord" href="/discord">Discord</a>
+                        <a class="nav-link text-primary" id="/links" href="/links">Links</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Servers
+                        My Work
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" id="/jaks" href="/servers/jaks">J.A.K.S.</a>
@@ -47,12 +53,6 @@ if ( isset ($_SESSION['login'] ) ) {
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" id="/server-info" href="/server-info">Global Information</a>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-primary" id="/donate" href="/donate">Donate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-primary" id="/staff" href="/staff">Staff</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-primary" id="/contact" href="/contact">Contact</a>

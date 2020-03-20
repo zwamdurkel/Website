@@ -4,6 +4,7 @@ body, html {
     min-height: 100vh;
     position: relative;
     z-index: -2;
+    background-color: #114e14;
 }
 
 .container-cont {
@@ -19,6 +20,7 @@ canvas {
 #particles-js{
     width: 100%;
     min-height: 100vh;
+    max-height: 200vh;
     background-color: #114e14;
     position: absolute;
     top: 0;
@@ -31,4 +33,101 @@ canvas {
     z-index: 2000;
 }
 
-/* Scrollbar */
+/* List Groups */
+.list-group {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    grid-gap: 1em;
+    border: none !important;
+}
+
+.list-group-horizontal .list-group-item + .list-group-item.active {
+    margin-left: 0px;
+    border-left-width: 1px !important;
+}
+
+.list-group-item {
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem !important;
+}
+
+.list-group-horizontal .list-group-item + .list-group-item {
+    border-top-width: 1px;
+    border-left-width: 1px;
+}
+
+/* test */
+.social {
+    display: inline-block;
+    max-width: 130px;
+    overflow: hidden;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: center;
+    padding: 1rem;
+}
+
+.social span {
+    font-size: 2rem !important;
+    margin-left: 1rem;
+}
+
+.social:focus {
+    max-width: 1000px;
+}
+
+/* Badges */
+.badge-discord {
+    background-color: #7289da;
+    color: white;
+}
+
+.badge-twitter {
+    background-color: #1da1f2;
+    color: white;
+}
+
+.badge-github {
+    background-color: #24292e;
+    color: white;
+}
+
+.badge-reddit {
+    background-color: #ff4500;
+    color: white;
+}
+
+.badge-youtube {
+    background-color: #ff0000;
+    color: white;
+}
+
+.list-group-item.discord i  {
+    color: #7289da;
+}
+
+.list-group-item.twitter i  {
+    color: #1da1f2;
+}
+
+.list-group-item.github i  {
+    color: #24292e;
+}
+
+.list-group-item.reddit i  {
+    color: #ff4500;
+}
+
+.list-group-item.youtube i  {
+    color: #ff0000;
+}
+.list-group-item.active i  {
+    color: #fff !important;
+}
+
+/* Twitter exception */
+iframe.twitter-timeline {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
