@@ -57,6 +57,12 @@ if ( isset ($_SESSION['login'] ) ) {
                     <li class="nav-item">
                         <a class="nav-link text-primary" id="/contact" href="/contact">Contact</a>
                     </li>
+                    <?php 
+                    if ($login) { echo "
+                    <li class='nav-item'>
+                        <a class='nav-link text-primary' id='/files' href='/files'>Files</a>
+                    </li>"; }
+                    ?>
                 </ul>
                 <ul class="navbar-nav navbar-right">
                     <li class="nav-item">
