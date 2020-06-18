@@ -10,8 +10,8 @@
             if ( !$login ) {
                 echo"<h2>Wait, What?</h2>
                 <hr class='bg-primary'>
-                <p>This is Zwamdurkel's personal website. <br>Why are you here? If your name isn't Zwamdurkel, you have no business here. :P</p>
-                <p>On this site you'll find many tools. That is, if your name is Zwamdurkel. Without logging in you will not be able to access many tools.</p>
+                <p>This is Zwamdurkel's personal website. <br></p>
+                <p>On this site you'll find many tools.</p>
                 <div class='d-flex justify-content-end'>
                     <a href='login' class='btn btn-primary text-white'>Log In <i class='fas fa-sign-in-alt'></i></a>
                 </div>";
@@ -23,4 +23,4 @@
             ?>
         </div>
         <!-- End Content -->
-<?php include('./footer.php')?>        
+<?php include('./footer.php')?>

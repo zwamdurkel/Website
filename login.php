@@ -1,20 +1,20 @@
 <?php
-include('./header.php');
 if ( isset($_SESSION['login']) && $_SESSION['login'] ) {
     header("Location: /");
 }
+include('./header.php');
 ?>        
         <!-- Start Content -->
             <div class="bg-white shadow-lg mx-5 mt-5 col-md-6 rounded-lg p-3 mx-auto">
                 <form method="POST" action="includes/login.inc.php">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" name="email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <label for="exampleInputEmail1">Username</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="xXx_destroyer_xXx" name="user">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your data with anyone else.</small>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" name="pass">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="P4ssw0rd" name="pass">
                     </div>
                     <div class="form-group form-check d-none">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">

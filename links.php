@@ -2,7 +2,7 @@
 include('./header.php')
 ?>        
         <!-- Start Content -->
-        <div class="my-5 mx-0 mx-md-5 p-3">
+        <div class="mt-5 mx-0 mx-md-5 p-3">
             <h1>Social Media Links</h1>
                 <hr class="bg-primary">
                 <div class="row my-5 p-3 bg-white rounded shadow-lg">

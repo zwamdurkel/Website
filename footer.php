@@ -6,20 +6,14 @@
             document.write("<p class='py-0 my-0 text-white-50'>&copy; " + year + " Zwamdurkel </p>")
         </script>
     </div>
-    <div id="particles-js"></div>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-    <script>
-        $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-        })
-        </script>
     <script>
         var url = window.location.pathname;
         var filename = url.substring(url.lastIndexOf('/'));
         var current = document.getElementById(filename);
-        current.classList.add("font-weight-bold");
-        var page = current.innerHTML + " | Zwamdurkel";
+        current.classList.add("font-weight-bold", "text-white");
+        current.classList.remove("text-primary");
+        var inner = current.innerHTML; 
+        var page = inner.substring(inner.lastIndexOf('> ') + 2) + " | Zwamdurkel";
         document.head.innerHTML += "<title>" + page + "</title>";
         current.innerHTML += "<span class='sr-only'>(current)</span>";
         current.href = "javascript:void(0)";
@@ -30,6 +24,32 @@
             current.parentElement.parentElement.classList.add("active");
             current.parentElement.parentElement.classList.add("font-weight-bold");
         }
+    </script>
+    <div id="particles-js"></div>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        function enlarge() {
+            console.log("test");
+            if ( document.getElementById("files").style.width == "90vw" ) {
+                document.getElementById("files").classList.remove("files-large");
+                document.getElementById("files").classList.add("files");
+                document.getElementById("files").style.width = "100%";
+                document.getElementById("enlargebtn").classList.add("fa-expand");
+                document.getElementById("enlargebtn").classList.remove("fa-compress");
+            } else {
+                document.getElementById("files").classList.remove("files");
+                document.getElementById("files").classList.add("files-large");
+                document.getElementById("files").style.width = "90vw";
+                document.getElementById("enlargebtn").classList.remove("fa-expand");
+                document.getElementById("enlargebtn").classList.add("fa-compress");
+            }
+        }    
     </script>
     <script>
         window.onscroll = function() {myFunction()};

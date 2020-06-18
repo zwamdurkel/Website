@@ -7,7 +7,7 @@
 particlesJS.load('particles-js', 'particles.json', function() {
   console.log('particles.js loaded - callback');
 });
-*/
+
 
 /* Otherwise just put the config content (json): */
 
@@ -16,14 +16,14 @@ particlesJS('particles-js',
 {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 60,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#c7f2d2"
     },
     "shape": {
       "type": "circle",
@@ -54,22 +54,22 @@ particlesJS('particles-js',
       "value": 3,
       "random": true,
       "anim": {
-        "enable": false,
-        "speed": 40,
+        "enable": true,
+        "speed": 3,
         "size_min": 0.1,
         "sync": false
       }
     },
     "line_linked": {
-      "enable": true,
-      "distance": 150,
+      "enable": false,
+      "distance": 176.3753266952075,
       "color": "#ffffff",
-      "opacity": 0.4,
+      "opacity": 0.08818766334760375,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 1.5782952832645452,
+      "speed": 3.1565905665290903,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -83,14 +83,14 @@ particlesJS('particles-js',
     }
   },
   "interactivity": {
-    "detect_on": "body",
+    "detect_on": "canvas",
     "events": {
       "onhover": {
         "enable": true,
         "mode": "repulse"
       },
       "onclick": {
-        "enable": false,
+        "enable": true,
         "mode": "push"
       },
       "resize": true

@@ -19,16 +19,17 @@ if ( isset ($_SESSION['login'] ) ) {
     <link rel="icon" href="./images/favicon_16.png" type="image/png">
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_180.png">
     <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="./fontawesome/css/pro.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/be1adcc54d.js" crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./fontawesome/css/pro.min.css">-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container-lg container-cont bg-light h-auto p-0 pb-1 shadow-lg">
+    <div class="container-lg container-cont bg-light h-auto p-0 shadow-lg">
         <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-dark">
             <a class="navbar-brand" href="/"><img src="images/logo.png" alt="zwam" class="img-fluid" width="100vw"></a>
             <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,14 +39,14 @@ if ( isset ($_SESSION['login'] ) ) {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-primary" id="/" href="/">Home </a>
+                        <a class="nav-link text-primary" id="/" href="/"><i class='fas fas fa-home fa-lg'></i> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" id="/links" href="/links">Links</a>
+                        <a class="nav-link text-primary" id="/links" href="/links"><i class='fas fas fa-link fa-lg'></i> Links</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        My Work
+                        <i class='fas fas fa-code-branch fa-lg'></i> My Work
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" id="/jaks" href="/servers/jaks">J.A.K.S.</a>
@@ -55,25 +56,37 @@ if ( isset ($_SESSION['login'] ) ) {
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" id="/contact" href="/contact">Contact</a>
+                        <a class="nav-link text-primary" id="/contact" href="/contact"><i class='fas fas fa-address-card fa-lg'></i> Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="d-flex justify-content-between">
+                            <a class='nav-link text-primary w-100' id='/files' href='/files'><i class='fas fas fa-file-alt fa-lg'></i> Files</a> 
+                            <a class='nav-external' href='https://riswick.net/fileserver' target="_blank"><i class="fas fa-external-link-alt fa-sm"></i></a>  
+                        </div>    
+                    </li>
+                    <li class="nav-item">
+                        <div class="d-flex justify-content-between">
+                            <a class='nav-link text-primary w-100' id='/panel' href='/panel'><i class='fas fas fa-server fa-lg'></i> Panel</a> 
+                            <a class='nav-external' href='https://panel.riswick.net' target="_blank"><i class="fas fa-external-link-alt fa-sm"></i></a>  
+                        </div>         
                     </li>
                     <?php 
-                    if ($login) { echo "
+                    /*if ($login) { echo "
                     <li class='nav-item'>
                         <a class='nav-link text-primary' id='/files' href='/files'>Files</a>
-                    </li>"; }
+                    </li>"; }*/
                     ?>
                 </ul>
                 <ul class="navbar-nav navbar-right">
-                    <li class="nav-item">
+                    <!--<li class="nav-item">
                         <?php
-                        if (!$login) {
-                            echo"<a class='nav-link text-primary' id='' href='/login' data-toggle='tooltip' data-placement='left' title='Log In'><i class='fas fa-sign-in-alt fa-lg'></i></a>";
+                        /*if (!$login) {
+                            echo"<a class='nav-link text-primary' id='' href='/login' data-toggle='tooltip' data-placement='left' title='Log In'><i class='fas fa-sign-in-alt fa-lg'></i> Log in</a>";
                         } else {
-                            echo"<a class='nav-link text-primary' id='' href='includes/logout.inc' data-toggle='tooltip' data-placement='left' title='Log Out'><i class='fas fa-sign-out-alt fa-lg'></i></a>";
-                        }
+                            echo"<a class='nav-link text-primary' id='' href='includes/logout.inc' data-toggle='tooltip' data-placement='left' title='Log Out'><i class='fas fa-sign-out-alt fa-lg'></i> Log out</a>";
+                        }*/
                         ?>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </nav>
