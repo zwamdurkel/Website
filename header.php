@@ -18,17 +18,27 @@ if ( isset ($_SESSION['login'] ) ) {
     <link rel="icon" href="./images/favicon_32.png" type="image/png">
     <link rel="icon" href="./images/favicon_16.png" type="image/png">
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_180.png">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main.min.css">
     <script src="https://kit.fontawesome.com/be1adcc54d.js" crossorigin="anonymous"></script>
     <!--<link rel="stylesheet" href="./fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./fontawesome/css/pro.min.css">-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.min.css">
 </head>
-<body>
+<script>
+    $(window).on("load",function(){
+     $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
+<div class="loader-wrapper">
+    <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<body>  
     <div class="container-lg container-cont bg-light h-auto p-0 shadow-lg">
         <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-dark">
             <a class="navbar-brand" href="/"><img src="images/logo.png" alt="zwam" class="img-fluid" width="100vw"></a>
