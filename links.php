@@ -41,7 +41,8 @@ include('./header.php')
                                 <p>Twitter is an American microblogging and social networking service on which users post and interact with messages known as "tweets". Registered users can post, like, and retweet tweets, but unregistered users can only read them.</p>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <a class="twitter-timeline" data-width="500" data-height="1000" data-theme="light" href="https://twitter.com/Zwamdurkel?ref_src=twsrc%5Etfw">Tweets by Zwamdurkel</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                <a class="twitter-timeline" data-width="500" data-height="1000" data-theme="light" href="https://twitter.com/Zwamdurkel?ref_src=twsrc%5Etfw">Tweets by Zwamdurkel</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+                                </script>
                             </div>
                         </div>
                         <div class="tab-pane fade show" id="list-github" role="tabpanel" aria-labelledby="list-github-list">
