@@ -6,24 +6,6 @@
             document.write("<p class='py-0 my-0 text-white-50'>&copy; " + year + " Zwamdurkel </p>")
         </script>
     </div>
-    <script>
-        var url = window.location.pathname;
-        var filename = url.substring(url.lastIndexOf('/'));
-        var current = document.getElementById(filename);
-        current.classList.add("font-weight-bold", "text-white");
-        current.classList.remove("text-primary");
-        var inner = current.innerHTML; 
-        var page = inner.substring(inner.lastIndexOf('> ') + 2) + " | Zwamdurkel";
-        document.head.innerHTML += "<title>" + page + "</title>";
-        current.innerHTML += "<span class='sr-only'>(current)</span>";
-        current.href = "javascript:void(0)";
-        // Check if page is in dropdown
-        if (current.parentElement.nodeName === "LI") {
-            current.parentElement.classList.add("active");
-        } else {
-            current.parentElement.parentElement.classList.add("active", "font-weight-bold", "text-white");
-        }
-    </script>
     <div id="particles-js"></div>
     <div id="particles-overlap"></div>
     <script src="/js/particles.js"></script>
@@ -32,6 +14,24 @@
         $(function () {
         $('[data-toggle="tooltip"]').tooltip()
         })
+    </script>
+    <script>
+        function enlarge() {
+            console.log("test");
+            if ( document.getElementById("files").style.width == "90vw" ) {
+                document.getElementById("files").classList.remove("files-large");
+                document.getElementById("files").classList.add("files");
+                document.getElementById("files").style.width = "100%";
+                document.getElementById("enlargebtn").classList.add("fa-expand");
+                document.getElementById("enlargebtn").classList.remove("fa-compress");
+            } else {
+                document.getElementById("files").classList.remove("files");
+                document.getElementById("files").classList.add("files-large");
+                document.getElementById("files").style.width = "90vw";
+                document.getElementById("enlargebtn").classList.remove("fa-expand");
+                document.getElementById("enlargebtn").classList.add("fa-compress");
+            }
+        }    
     </script>
     <script>
         var url = window.location.pathname;
@@ -117,6 +117,25 @@
             "message": "This website uses cookies to ensure you get the best experience on my website."
         }
         });
+    </script>
+    <script>
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
     </script>
 </body>
 </html>

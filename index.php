@@ -22,8 +22,9 @@
             }*/
             ?>
             <div class="row">
-                <div class="col-sm d-flex justify-content-between flex-column">
-                    <div>
+                <div class="col-sm d-flex justify-content-between flex-column bg-light mx-3 p-3 rounded-lg border">
+                    <div class="">
+                        <h2>Hello there</h2>
                         <hr class='bg-primary'>
                         <p>This is Zwamdurkel's personal website. <br></p>
                         <p>On this site you'll find many tools.</p>
@@ -62,7 +63,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-white shadow-lg rounded-lg p-3 mx-md-5 my-5">
+        <div class="bg-white shadow-lg rounded-lg p-3 mx-md-5 my-7">
             <div class="row">
                 <div class="col-sm-8 bg-light mx-3 p-3 rounded-lg border">
                     <h2>File Server</h2>
@@ -87,7 +88,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-white shadow-lg rounded-lg p-3 mx-md-5 my-5">
+        <div class="bg-white shadow-lg rounded-lg p-3 mx-md-5 my-7">
             <div class="row">
                 <div class="col-sm d-flex justify-content-center align-items-center m-3">
                     <i class="fas fa-server fa-8x text-primary"></i>
@@ -106,7 +107,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-white shadow-lg rounded-lg p-3 mx-md-5 my-5">
+        <div class="bg-white shadow-lg rounded-lg p-3 mx-md-5 my-7">
             <div class="row">
                 <div class="col-sm-12 text-center">
                     <h2>My work</h2>
@@ -141,6 +142,9 @@
                             <a href="panel" class="btn btn-primary">More <i class="fas fa-external-link-alt text-white-50"></i></a>
                         </div>
                     </div>
+                </div>
+                <div class="w-100 d-flex mt-3">
+                    <a href="mywork" class="mx-auto btn btn-primary">All Projects <i class="fas fa-external-link-alt text-white-50"></i></a>
                 </div>
             </div>
         </div>
