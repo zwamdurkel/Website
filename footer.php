@@ -15,7 +15,7 @@
         $('[data-toggle="tooltip"]').tooltip()
         })
     </script>
-    <script>
+    <script async>
         function enlarge() {
             console.log("test");
             if ( document.getElementById("files").style.width == "90vw" ) {
@@ -24,16 +24,31 @@
                 document.getElementById("files").style.width = "100%";
                 document.getElementById("enlargebtn").classList.add("fa-expand");
                 document.getElementById("enlargebtn").classList.remove("fa-compress");
+                var enlarged = "false";
             } else {
                 document.getElementById("files").classList.remove("files");
                 document.getElementById("files").classList.add("files-large");
                 document.getElementById("files").style.width = "90vw";
                 document.getElementById("enlargebtn").classList.remove("fa-expand");
                 document.getElementById("enlargebtn").classList.add("fa-compress");
+                var enlarged = "true";
             }
+            localStorage.setItem("enlarged", enlarged);
+
         }    
     </script>
-    <script>
+    <script async>
+        var defaultenlarged = localStorage.getItem("enlarged");
+        console.log("default enlarged:" + defaultenlarged);
+        if ( defaultenlarged == "true" ) {
+            document.getElementById("files").classList.remove("files");
+            document.getElementById("files").classList.add("files-large");
+            document.getElementById("files").style.width = "90vw";
+            document.getElementById("enlargebtn").classList.remove("fa-expand");
+            document.getElementById("enlargebtn").classList.add("fa-compress");
+        }
+    </script>
+    <script async>
         var url = window.location.pathname;
         var filename = url.substring(url.lastIndexOf('/'));
         var current = document.getElementById(filename);
@@ -43,7 +58,7 @@
         current.innerHTML += "<span class='sr-only'>(current)</span>";
         current.href = "javascript:void(0)";
         // Check if page is in dropdown
-        if (current.parentElement.nodeName === "LI") {
+        if (current.classList.contains("in-header") ) {
             current.parentElement.classList.add("active");
             current.classList.add("font-weight-bold", "text-white");
             current.classList.remove("text-primary");
@@ -52,7 +67,7 @@
             current.classList.add("font-weight-bold", "text-primary");
         }
     </script>
-    <script>
+    <script async>
         window.onscroll = function() {myFunction()};
 
         var navbar = document.getElementById("navbar");
@@ -85,7 +100,7 @@
             document.getElementById("particles-overlap").style.top = scrollpos;
         }
     </script>
-    <script>
+    <script async>
         function copyString(str) {
             var el = document.createElement('textarea');
             el.value = str;
@@ -98,7 +113,7 @@
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-    <script>
+    <script async>
         window.cookieconsent.initialise({
         "palette": {
             "popup": {
@@ -118,7 +133,7 @@
         }
         });
     </script>
-    <script>
+    <script async>
         (function() {
             'use strict';
             window.addEventListener('load', function() {

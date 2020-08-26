@@ -1,0 +1,5 @@
+# Groep 1
+User-agent: *
+Allow: /
+
+Sitemap: https://riswick.net/sitemap.xml

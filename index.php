@@ -1,6 +1,6 @@
 <?php include('./header.php')?>        
         <!-- Start Content -->
-        <img src="images/banner.png" alt="Zwamdurkel's website" class="img-fluid w-100">
+        <img src="images/banner.webp" alt="Zwamdurkel's website" class="img-fluid w-100">
         <div class="mx-5">
             <h1>Zwamdurkel's Site</h1>
             <hr class="bg-primary">
@@ -42,13 +42,13 @@
                         </ol>
                         <div class="carousel-inner rounded">
                             <div class="carousel-item active">
-                            <a href="filerun"><img class="d-block w-100" src="/images/filerun.png" alt="Filerun"></a>          
+                            <a href="filerun"><img class="d-block w-100" src="/images/filerun.webp" alt="Filerun"></a>          
                             </div>
                             <div class="carousel-item">
-                            <a href="panel"><img class="d-block w-100" src="/images/panel.png" alt="Panel"></a>
+                            <a href="panel"><img class="d-block w-100" src="/images/panel.webp" alt="Panel"></a>
                             </div>
                             <div class="carousel-item">
-                            <a href=""><img class="d-block w-100" src="/images/temp.png" alt="Temp"></a>
+                            <a href=""><img class="d-block w-100" src="/images/temp.webp" alt="Temp"></a>
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -115,7 +115,7 @@
                 </div>
                 <div class="col-sm-4 my-md-0 my-3">
                     <div class="card bg-light">
-                        <img src="/images/mcserver.png" class="card-img-top" alt="MC Server">
+                        <img src="/images/mcserver.webp" class="card-img-top" alt="MC Server">
                         <div class="card-body">
                             <h5 class="card-title">MC Servers</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -125,7 +125,7 @@
                 </div>
                 <div class="col-sm-4 my-md-0 my-3">
                     <div class="card bg-light">
-                        <img src="/images/websites.png" class="card-img-top" alt="Websites">
+                        <img src="/images/websites.webp" class="card-img-top" alt="Websites">
                         <div class="card-body">
                             <h5 class="card-title">Websites</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -135,7 +135,7 @@
                 </div>
                 <div class="col-sm-4 my-md-0 my-3">
                     <div class="card bg-light">
-                        <img src="/images/discordbot.png" class="card-img-top" alt="Discord Bot">
+                        <img src="/images/discordbot.webp" class="card-img-top" alt="Discord Bot">
                         <div class="card-body">
                             <h5 class="card-title">Discord Bot</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
